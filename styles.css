@@ -1,7 +1,7 @@
 /* build in firebug, don't judge me */
 html,body{background:#999;color:#000;}
 #doc{background:#fff;border:1em solid #fff;-moz-border-radius:5px;}
-p{margin:1em 0}
+p{margin:1em 0} 
 form div{float:left;width:250px;padding-bottom:10px;}
 form label{float:left;width:80px;font-weight:bold;}
 form div#bar{clear:both;float:none;margin:1em 0;background:#69c;width:auto;padding:5px;text-align:right;}

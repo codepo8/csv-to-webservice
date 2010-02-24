@@ -112,8 +112,12 @@ function csvtoservice($url,$options){
   }
     $csvtable .=  '</tbody></table>';
   }
-  return array('table'=>$csvtable,'form'=>$csvform,
-               'query'=>$yqlquery,'json'=>$data);
+  return array(
+                'table'=>$csvtable,
+                'form'=>$csvform,
+                'query'=>$yqlquery,
+                'json'=>$data
+              );
 }
 
 function get($url){

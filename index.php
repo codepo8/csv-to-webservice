@@ -24,22 +24,22 @@
 <?php 
   include('csvtoservice.php');
   $content = csvtoservice(
-                'http://winterolympicsmedals.com/medals.csv',
-                array(
-                  'filter'=> array('eventgender','city'),
-                  'rename'=> array(
-                    'noc'=>'country'
-                  ),
-                  'preset'=> array(
-                    'year'=> '1992'
-                  ),
-                  'prefill'=> array(
-                    'discipline'=> 'Alpine Skiing',
-                    'medal'=> 'Gold'
-                  ),
-                  'uppercase'=>true
-                )
-             );
+    'http://winterolympicsmedals.com/medals.csv',
+    array(
+      'filter'=> array('eventgender','city'),
+      'rename'=> array(
+        'noc'=>'country'
+      ),
+      'preset'=> array(
+        'year'=> '1992'
+      ),
+      'prefill'=> array(
+        'discipline'=> 'Alpine Skiing',
+        'medal'=> 'Gold'
+      ),
+      'uppercase'=>true
+    )
+ );
 
 
 
@@ -50,23 +50,12 @@
     echo '<h4>Filters</h4>';
     echo $content['form'];
 
-    // show the query (debugging, really)
-    // if($content['query']){
-    //   echo '<h3>YQL request</h3>';
-    //   echo $content['query'];
-    // }
-
     // show the table
     if($content['table']){
       echo '<h4>Results</h4>';
       echo $content['table'];
     }
 
-    // display the JSON (debugging, really) 
-    // if($content['json']){
-    //   echo '<h3>Results (json)</h3>';
-    //   echo $content['json'];
-    // }
   }
 ?>
 </div>
