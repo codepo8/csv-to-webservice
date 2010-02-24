@@ -60,7 +60,6 @@
     }
   }
 ?>
-?>
   </div>
 <div id="ft" role="contentinfo"><p>Written by <a href="http://wait-till-i.com">Chris Heilmann</a>, powered by <a href="http://developer.yahoo.com/yql/">YQL</a> - demo csv by the <a href="http://www.guardian.co.uk/news/datablog">Guardian Data Blog</a>.</p></div>
 </div>
