@@ -1,4 +1,3 @@
-<?php error_reporting(0);?>
 <?php
 /*
   CSV to Webservice by Christian Heilmann
@@ -31,7 +30,9 @@ function csvtoservice($url,$options){
 
   if($options['prefill']){
     foreach(array_keys($options['prefill']) as $p){
-      $_GET[$p] = $options['prefill'][$p];
+      if(!isset($_GET[$p])){
+        $_GET[$p] = $options['prefill'][$p];
+      }
     }
   }
   
